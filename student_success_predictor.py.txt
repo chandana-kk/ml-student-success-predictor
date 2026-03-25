@@ -1,0 +1,39 @@
+# ML Student Success Predictor
+
+from sklearn.tree import DecisionTreeClassifier
+import numpy as np
+
+print("Student Exam Success Predictor\n")
+
+# dataset
+# [study_hours, sleep_hours, attendance]
+
+X = np.array([
+[2,5,60],
+[4,6,70],
+[6,7,80],
+[8,6,90],
+[1,4,50],
+[7,7,85],
+[3,5,65]
+])
+
+# 1 = pass , 0 = fail
+y = np.array([0,0,1,1,0,1,0])
+
+model = DecisionTreeClassifier()
+
+model.fit(X,y)
+
+study = int(input("Enter study hours per day: "))
+sleep = int(input("Enter sleep hours per day: "))
+attendance = int(input("Enter attendance percentage: "))
+
+prediction = model.predict([[study,sleep,attendance]])
+
+print()
+
+if prediction[0] == 1:
+    print("Prediction: Student will PASS")
+else:
+    print("Prediction: Student may FAIL")
