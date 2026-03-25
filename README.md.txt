@@ -12,9 +12,11 @@ Decision Tree Classifier
 
 Technology:
 Python
+Numpy
 Scikit-learn
-NumPy
+
 
 How to run:
 
+It can be run on google colab, jupiter and vs code
 python student_success_predictor.py
