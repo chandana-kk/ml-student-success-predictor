@@ -1,4 +1,4 @@
-# ML Student Success Predictor
+## ML Student Success Predictor
 
 This project predicts whether a student will pass or fail an exam using machine learning.
 
@@ -14,7 +14,6 @@ Technology:
 Python
 Numpy
 Scikit-learn
-
 
 How to run:
 
